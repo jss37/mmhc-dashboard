@@ -22,15 +22,17 @@
             right:0;
             top:0;
         }
-        .big2 {
-            z-index: 1;
-            position: absolute;
-            width: 60%;
-            max-width: 90%;
-            height: 100%;
-            left: 20rem;
-            top:2rem;
-        }
+       .big2 {
+    z-index: 1;
+    position: absolute;
+    width: 60%;
+    max-width: 90%;
+    height: 100%;
+    left: 50%; /* Set left to 50% */
+    transform: translateX(-50%); /* Move it back by half its own width */
+    top: 2rem;
+    /* Remove margin-left: auto; and margin-right: auto; as they don't apply here */
+}
 
         #shader {
             background-color: black;
