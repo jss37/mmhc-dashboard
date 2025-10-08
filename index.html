@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
         img:hover {
-            cursor:pointer;
+            cursor: pointer;
         }
         .big {
             z-index: 1;
@@ -44,9 +48,22 @@
         .visible {
             display: none;
         }
+
+        footer {
+            background-color: #0C5449;
+            height: 7vw;
+        }
+
+         header {
+            background-color: #0C5449;
+            height: 7vw;
+        }
     </style>
 </head>
 <body>
+      <header style="display: flex;align-items: center;justify-content: center;">
+        <h1 style="color: #f1da35;">Michigan Mobile Health Core Dashboard V.1</h1><img src="./mmhc yellow.png" height="70%">
+    </header>
     <div id="shader" class="visible"></div>
     <div style="display: grid; grid-template-columns: 1fr 1fr;">
         <div style="width: 50%;">
@@ -60,14 +77,14 @@
     </div>
 
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr;column-gap: 15rem;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr;column-gap: 12rem;">
         <div style="display: grid; grid-template-columns: 1fr 1fr; width: 150%; ">
             <div>
-                <img src="./corr_scatter1.jpeg" width="100%" id="scatter" onclick="scatterBig()">
+                <img src="./corr_scatter3.jpeg" width="90%" id="scatter" onclick="scatterBig()">
             </div>
             <div>
                 <div style="display: grid; grid-template-columns: auto;">
-                    <div><img src="./corr_heatmap.jpeg" width="70%" height="100%" id="heatmap" onclick="heatmapBig()"></div>
+                    <div><img src="./corr_heatmap (1).jpeg" width="70%" height="100%" id="heatmap" onclick="heatmapBig()"></div>
                     <div><img src="./Age Plot4.jpeg" width="70%" height="120%" id="violin" onclick="violinBig()"></div>
                 </div>
             </div>
@@ -86,10 +103,14 @@
                     <div><img src="./shield_only_color.png" style="display: block;"  height="80%" width="80%"></div>
                     <div><img src="./Phoenix_Brandmark_Horizontal_COLOR.png" style="display: block;" width="100%"></div>
                 </div>
+               
             </div>
             </div>
         </div>
     </div>
+    <footer style="display: flex;align-items: center;justify-content: center;">
+        <h1 style="color: #f1da35;">Michigan Mobile Health Core Dashboard V.1</h1><img src="./mmhc yellow.png" height="70%">
+    </footer>
 </body>
 <script>
     // function enlargeGraph1() {
@@ -200,5 +221,4 @@
         x.scrollIntoView({behavior:"smooth"});
     }
 </script>
-
 </html>
